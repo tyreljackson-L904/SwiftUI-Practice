@@ -9,8 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var love = false
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            if love == true {
+                Image(systemName: "heart.fill")
+            } else {
+                Image(systemName: "heart")
+            }
+            
+            Button(action:{
+                self.love.toggle()
+            }) {
+                Text("Click Me!")
+                
+            }
+        }
     }
 }
 
