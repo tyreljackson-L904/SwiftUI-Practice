@@ -9,8 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
         
+    var listOfColors:[Color] = [
+        Color.red,
+        Color.green,
+        Color.blue
+    ]
+    
+    @State private var counter = 0
+    
+    var body: some View {
+        VStack{
+            Text("\(counter)")
+            ForEach(0..<listOfColors.count){i in
+                
+                Button(action: {
+                    self.counter += 1
+                }) {
+                    Text("This Color is blah \(self.listOfColors[i].description)")
+                        .background(self.listOfColors[i])
+                }
+            }
+        }
     }
 }
 
