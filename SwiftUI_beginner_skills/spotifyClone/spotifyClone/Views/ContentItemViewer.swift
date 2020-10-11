@@ -8,27 +8,40 @@
 import SwiftUI
 
 struct ContentItemViewer: View {
+    var topSpacer_height:CGFloat = 400
+    var colorGray:Color = Color.init(red: 0.5, green: 0.5, blue: 0.5)
+    
     var body: some View {
         ZStack{
+            // Layer 1
             VStack{
                 Spacer()
                     .frame(height: 50)
                 
-                Image(systemName: "music.note")
+                Image("cash")
+                    .resizable()
+                    .frame(width: 200, height: 200)
                 
                 Text("Title")
                 
                 Text("Subtitle")
+                    .foregroundColor(colorGray)
                 
                 Spacer()
             }
-            
+            // Layer 2
             ScrollView{
                 VStack(spacing: 0){
                     HStack {
                         Spacer()
-                            .frame(height: 200)
-                            .background(Color.red.opacity(0.3))
+                            .frame(height: topSpacer_height)
+                            .background(LinearGradient(gradient: Gradient(colors: [
+                                Color.clear,
+                                Color.clear,
+                                Color.clear,
+                                Color.clear,
+                                Color.black
+                            ]), startPoint: .top, endPoint: .bottom))
                     }
                     
                     VStack {
