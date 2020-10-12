@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentItemViewer: View {
     var topSpacer_height:CGFloat = 400
     var colorGray:Color = Color.init(red: 0.5, green: 0.5, blue: 0.5)
-    var playButton_offset:CGFloat = 425
+    @State var playButton_offset:CGFloat = 425
     
     let trackList:[Int: String] = [
         1: "Amazing Grace",
@@ -67,6 +67,12 @@ struct ContentItemViewer: View {
             
             // Layer 2 - Track List
             ScrollView{
+                GeometryReader{ geo -> AnyView? in
+                    let thisOffset = geo.frame(in: .global).minY
+                    self.playButton_offset = thisOffset
+                    return nil
+                }
+                
                 VStack(spacing: 0){
                     HStack {
                         Spacer()
@@ -112,18 +118,21 @@ struct ContentItemViewer: View {
             // Layer 3 - Play BUtton
             VStack{
                 Spacer()
-                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                    Text("PLAY")
-                        .frame(width: 250, height: 50)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20, weight: .bold))
-                        .background(
-                            RoundedRectangle(cornerRadius: 25.0).fill(Color.init(red: 30/255, green: 215/255, blue: 96/255))
-                                
-                        )
-                }
+                    .frame(height:playButton_offset + 300)
+                Text("PLAY")
+                    .frame(width: 250, height: 50)
+                    .foregroundColor(.white)
+                    .font(.system(size: 20, weight: .bold))
+                    .background(
+                        RoundedRectangle(cornerRadius: 25.0).fill(Color.init(red: 30/255, green: 215/255, blue: 96/255)))
                 Spacer()
-                    .frame(height:playButton_offset)
+            }
+            
+            // Layer 4 - Observer Layer
+            VStack{
+                Text("\(playButton_offset)")
+                    .foregroundColor(.yellow)
+                Spacer()
             }
         }
     }
