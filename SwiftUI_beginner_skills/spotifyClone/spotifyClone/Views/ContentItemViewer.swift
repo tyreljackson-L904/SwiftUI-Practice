@@ -119,12 +119,23 @@ struct ContentItemViewer: View {
             VStack{
                 Spacer()
                     .frame(height:playButton_offset + 300)
-                Text("PLAY")
-                    .frame(width: 250, height: 50)
-                    .foregroundColor(.white)
-                    .font(.system(size: 20, weight: .bold))
-                    .background(
-                        RoundedRectangle(cornerRadius: 25.0).fill(Color.init(red: 30/255, green: 215/255, blue: 96/255)))
+                
+                if (playButton_offset <= -300) {
+                    Image(systemName: "play.fill")
+                        .frame(width: 50, height: 50)
+                        .foregroundColor(.white)
+                        .font(.system(size: 28, weight: .bold))
+                        .background(
+                            RoundedRectangle(cornerRadius: 25.0).fill(Color.init(red: 30/255, green: 215/255, blue: 96/255)))
+                } else {
+                    Text("PLAY")
+                        .frame(width: 250, height: 50)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20, weight: .bold))
+                        .background(
+                            RoundedRectangle(cornerRadius: 25.0).fill(Color.init(red: 30/255, green: 215/255, blue: 96/255)))
+                }
+                
                 Spacer()
             }
             
