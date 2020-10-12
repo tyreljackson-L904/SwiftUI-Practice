@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentItemViewer: View {
     var topSpacer_height:CGFloat = 400
     var colorGray:Color = Color.init(red: 0.5, green: 0.5, blue: 0.5)
+    var playButton_offset:CGFloat = 425
     
-    let songList:[Int: String] = [
+    let trackList:[Int: String] = [
         1: "Amazing Grace",
         2: "Belshazzar",
         3: "Children Go Where I Send Thee",
@@ -41,10 +42,10 @@ struct ContentItemViewer: View {
     
     var body: some View {
         ZStack{
-            // Layer 0
+            // Layer 0 - Background Gradient
             LinearGradient(gradient: Gradient(colors: [Color.init(red: 61/255, green: 89/255, blue: 115/255), Color.black, Color.black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
             
-            // Layer 1
+            // Layer 1 - Album
             VStack{
                 Spacer()
                     .frame(height: 50)
@@ -63,7 +64,8 @@ struct ContentItemViewer: View {
                 
                 Spacer()
             }
-            // Layer 2
+            
+            // Layer 2 - Track List
             ScrollView{
                 VStack(spacing: 0){
                     HStack {
@@ -79,19 +81,7 @@ struct ContentItemViewer: View {
                     }
                     
                     VStack {
-                        Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("PLAY")
-                                .frame(width: 250, height: 38)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20, weight: .bold))
-                                .background(
-                                    RoundedRectangle(cornerRadius: 25.0).fill(Color.init(red: 42/255, green: 209/255, blue: 86/255))
-                                        
-                                )
-                        }.padding(.bottom, 30)
-                        
-                        
-                        ForEach(Array(songList.sorted(by: <)), id: \.key){ key, value in
+                        ForEach(Array(trackList.sorted(by: <)), id: \.key){ key, value in
                             HStack{
                                 Image("cash")
                                     .resizable()
@@ -117,6 +107,23 @@ struct ContentItemViewer: View {
                 .background(Color.clear)
                 
                 
+            }
+            
+            // Layer 3 - Play BUtton
+            VStack{
+                Spacer()
+                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                    Text("PLAY")
+                        .frame(width: 250, height: 50)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20, weight: .bold))
+                        .background(
+                            RoundedRectangle(cornerRadius: 25.0).fill(Color.init(red: 30/255, green: 215/255, blue: 96/255))
+                                
+                        )
+                }
+                Spacer()
+                    .frame(height:playButton_offset)
             }
         }
     }
