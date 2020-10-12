@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct SearchPage: View {
     var body: some View {
