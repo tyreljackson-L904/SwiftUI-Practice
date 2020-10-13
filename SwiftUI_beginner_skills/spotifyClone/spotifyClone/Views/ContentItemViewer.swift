@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentItemViewer: View {
+    @State var playButton_offset:CGFloat = 425
+    
     var topSpacer_height:CGFloat = 400
     var colorGray:Color = Color.init(red: 0.5, green: 0.5, blue: 0.5)
-    @State var playButton_offset:CGFloat = 425
+    
     
     let trackList:[Int: String] = [
         1: "Amazing Grace",
