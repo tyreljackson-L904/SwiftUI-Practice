@@ -15,13 +15,13 @@
 		A54561AC2535615D000BCEE0 /* Ratings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A54561AA2535615D000BCEE0 /* Ratings.xcdatamodeld */; };
 		A54561B72535615E000BCEE0 /* RatingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54561B62535615E000BCEE0 /* RatingsTests.swift */; };
 		A54561C22535615E000BCEE0 /* RatingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54561C12535615E000BCEE0 /* RatingsUITests.swift */; };
-		A54561D325356240000BCEE0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54561D225356240000BCEE0 /* HomeView.swift */; };
 		A54561D82535624F000BCEE0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54561D72535624F000BCEE0 /* SearchView.swift */; };
 		A54561DD2535626E000BCEE0 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54561DC2535626E000BCEE0 /* AddView.swift */; };
 		A54561E225356283000BCEE0 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54561E125356283000BCEE0 /* NotificationsView.swift */; };
 		A54561E72535628E000BCEE0 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54561E62535628E000BCEE0 /* AccountView.swift */; };
 		A54561ED25356418000BCEE0 /* ProfilePic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54561EC25356418000BCEE0 /* ProfilePic.swift */; };
 		A577BED925356E980042BC36 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A577BED825356E980042BC36 /* Cards.swift */; };
+		A5A6950025365F8E000C3225 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A694FF25365F8E000C3225 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +56,13 @@
 		A54561BD2535615E000BCEE0 /* RatingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54561C12535615E000BCEE0 /* RatingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsUITests.swift; sourceTree = "<group>"; };
 		A54561C32535615E000BCEE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A54561D225356240000BCEE0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A54561D72535624F000BCEE0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A54561DC2535626E000BCEE0 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		A54561E125356283000BCEE0 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		A54561E62535628E000BCEE0 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		A54561EC25356418000BCEE0 /* ProfilePic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePic.swift; sourceTree = "<group>"; };
 		A577BED825356E980042BC36 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		A5A694FF25365F8E000C3225 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,7 @@
 		A54561EB253562D2000BCEE0 /* Main_Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				A54561D225356240000BCEE0 /* HomeView.swift */,
+				A5A694FF25365F8E000C3225 /* HomeView.swift */,
 				A54561D72535624F000BCEE0 /* SearchView.swift */,
 				A54561DC2535626E000BCEE0 /* AddView.swift */,
 				A54561E125356283000BCEE0 /* NotificationsView.swift */,
@@ -299,8 +299,8 @@
 				A54561ED25356418000BCEE0 /* ProfilePic.swift in Sources */,
 				A54561A92535615D000BCEE0 /* Persistence.swift in Sources */,
 				A54561A22535615C000BCEE0 /* ContentView.swift in Sources */,
+				A5A6950025365F8E000C3225 /* HomeView.swift in Sources */,
 				A577BED925356E980042BC36 /* Cards.swift in Sources */,
-				A54561D325356240000BCEE0 /* HomeView.swift in Sources */,
 				A54561D82535624F000BCEE0 /* SearchView.swift in Sources */,
 				A54561E72535628E000BCEE0 /* AccountView.swift in Sources */,
 				A54561A02535615C000BCEE0 /* RatingsApp.swift in Sources */,

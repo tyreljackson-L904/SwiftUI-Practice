@@ -2,10 +2,11 @@
 //  HomeView.swift
 //  Ratings
 //
-//  Created by Tyrel Jackson on 10/12/20.
+//  Created by Tyrel Jackson on 10/13/20.
 //
 
 import SwiftUI
+
 
 struct HomeView: View {
     @State private var offset = CGSize(width: 0, height: UIScreen.main.bounds.height * 0.5)
@@ -47,7 +48,6 @@ struct HeaderView: View {
         .background(colorGray).edgesIgnoringSafeArea(.all)
     }
 }
-
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

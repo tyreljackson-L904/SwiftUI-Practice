@@ -15,7 +15,6 @@ struct ContentView: View {
             HomeView()
                 .tabItem {
                     Image(systemName: "house")
-                    
                 }
             SearchView()
                 .tabItem {
