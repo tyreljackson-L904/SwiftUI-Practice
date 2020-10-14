@@ -19,7 +19,7 @@ struct ContentView: View {
             SearchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
-    
+                    
                 }
             AddView()
                 .tabItem {
@@ -29,16 +29,14 @@ struct ContentView: View {
             NotificationsView()
                 .tabItem {
                     Image(systemName: "bell")
-
+                    
                 }
             AccountView()
                 .tabItem {
                     Image(systemName: "person.crop.circle")
-                
+                    
                 }
-            
         }
-        
     }
 }
 

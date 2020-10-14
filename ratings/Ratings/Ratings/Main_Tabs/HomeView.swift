@@ -30,10 +30,10 @@ struct HomeView: View {
 struct HeaderView: View {
     var pro:String = "Pro"
     var code:String = "Code"
-    
     var colorGray = Color.init(red: 0/255, green: 128/255, blue: 163/255)
     
     var body: some View {
+        
         HStack {
             Text("\(pro)")
                 .foregroundColor(.black)
