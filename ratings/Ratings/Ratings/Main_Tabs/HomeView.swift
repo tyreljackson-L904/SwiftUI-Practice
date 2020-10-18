@@ -22,7 +22,7 @@ struct HomeView: View {
             ProfilePic()
             Cards()
                 .offset(self.offset)
-        }.background(colorGray).edgesIgnoringSafeArea(.all)
+        }.background(colorGray).edgesIgnoringSafeArea(.top)
         .navigationBarTitle(Text("ProCode"))
     }
 }
@@ -33,19 +33,27 @@ struct HeaderView: View {
     var colorGray = Color.init(red: 0/255, green: 128/255, blue: 163/255)
     
     var body: some View {
-        
-        HStack {
-            Text("\(pro)")
-                .foregroundColor(.black)
-                .font(.title)
-            Text("\(code)")
-                .foregroundColor(Color.init(red: 123/255, green: 223/255, blue: 242/255))
-                .font(.title)
+        VStack {
+            
+            HStack(spacing: 15) {
+                
+                Text("\(pro)")
+                    .foregroundColor(.black)
+                    .fontWeight(.bold)
+                    .font(.title)
+                
+                Text("\(code)")
+                    .foregroundColor(Color.init(red: 123/255, green: 223/255, blue: 242/255))
+                    .font(.title)
+                    .fontWeight(.bold)
+            }
+            .padding()
+            .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+            .frame(maxWidth: .infinity)
+            .background(colorGray).edgesIgnoringSafeArea(.all)
+            
+            Spacer(minLength: 0)
         }
-        .padding(.vertical)
-        .padding(.top, (UIApplication.shared.windows.first?.safeAreaInsets.top)!)
-        .frame(maxWidth: .infinity, maxHeight: 100)
-        .background(colorGray).edgesIgnoringSafeArea(.all)
     }
 }
 
