@@ -23,6 +23,7 @@
 		A5262875253D5A5C00247780 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5262874253D5A5C00247780 /* Header.swift */; };
 		A526287A253D61F900247780 /* SocialLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5262879253D61F900247780 /* SocialLinks.swift */; };
 		A557FC7B253E03FF00F512FF /* Profile_Links_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557FC7A253E03FF00F512FF /* Profile_Links_View.swift */; };
+		A5996F9B253E2B4A00EE698A /* Sticky_Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5996F9A253E2B4A00EE698A /* Sticky_Header.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		A5262874253D5A5C00247780 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		A5262879253D61F900247780 /* SocialLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLinks.swift; sourceTree = "<group>"; };
 		A557FC7A253E03FF00F512FF /* Profile_Links_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile_Links_View.swift; sourceTree = "<group>"; };
+		A5996F9A253E2B4A00EE698A /* Sticky_Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticky_Header.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				A5262874253D5A5C00247780 /* Header.swift */,
 				A5262879253D61F900247780 /* SocialLinks.swift */,
 				A557FC7A253E03FF00F512FF /* Profile_Links_View.swift */,
+				A5996F9A253E2B4A00EE698A /* Sticky_Header.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			files = (
 				A5262875253D5A5C00247780 /* Header.swift in Sources */,
 				A526287A253D61F900247780 /* SocialLinks.swift in Sources */,
+				A5996F9B253E2B4A00EE698A /* Sticky_Header.swift in Sources */,
 				A526285B253D599200247780 /* AddView.swift in Sources */,
 				A526281D253D583D00247780 /* Persistence.swift in Sources */,
 				A5262816253D583B00247780 /* ContentView.swift in Sources */,

@@ -11,7 +11,7 @@ struct HomeView: View {
     var body: some View {
         
         HStack {
-            Header()
+            Profile_Links_View()
         }
     }
 }

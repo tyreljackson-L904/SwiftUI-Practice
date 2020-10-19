@@ -8,25 +8,68 @@
 import SwiftUI
 
 struct Profile_Links_View: View {
+    
     var body: some View {
-        ZStack {
-            HStack(spacing: 5) {
-                Header()
-                    .padding()
+        VStack {
+            Text("ProCode")
+                .fontWeight(.bold)
+                .font(.title)
+                .edgesIgnoringSafeArea(.top)
+                .frame(width: .infinity, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            
+                
+            Spacer()
+            ZStack {
+                
+                VStack {
+                        
+                    HStack{
+                        Header()
+                            .padding(.horizontal)
+                        GeometryReader { geo in
+                            SocialLinks()
+                                .padding(.top)
+                                .padding(.vertical)
+                                .frame(width: 100 , height: 275 )
+                        }
+                        
+                    }
+                    .frame(width: .infinity, height: 300)
+                    .background(Color.red)
+                    Spacer()
+                }
+                .edgesIgnoringSafeArea(.top)
+
+            }
+        }
+    }
+}
+
+struct appBar : View {
+    
+    var body : some View {
+        
+        VStack {
+            
+            HStack {
+                
+                Spacer()
+                
+                Text("ProCode")
+                    .fontWeight(.bold)
+                    .font(.title)
+                    .foregroundColor(.white)
+                
                 Spacer(minLength: 0)
                 
-                    
-                SocialLinks()
-                    .padding()
+                
             }
-            .frame(width: .infinity, height: 275)
-            .background(Color.red)
+            .padding()
+            .background(Color.black.opacity(0.5))
+            .edgesIgnoringSafeArea(.top)
             
         }
-        
-        
     }
-    
 }
 
 struct Profile_Links_View_Previews: PreviewProvider {
@@ -34,3 +77,4 @@ struct Profile_Links_View_Previews: PreviewProvider {
         Profile_Links_View()
     }
 }
+
