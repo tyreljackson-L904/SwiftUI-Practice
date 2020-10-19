@@ -9,7 +9,20 @@ import SwiftUI
 
 struct SocialLinks: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack {
+                ForEach(0..<20) { circle in
+                    Image(systemName: "circle.grid.hex")
+                        .font(.system(size: 35))
+                        .frame(width: 60, height: 60)
+                        .background(Color.init(red: 0.95, green: 0.95, blue: 0.95))
+                        .foregroundColor(Color.black)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.black,lineWidth: 3))
+                }.padding(5)
+            }
+            
+        }
     }
 }
 

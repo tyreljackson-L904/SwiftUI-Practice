@@ -15,6 +15,14 @@
 		A5262820253D583D00247780 /* AppIdea_CRUD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A526281E253D583D00247780 /* AppIdea_CRUD.xcdatamodeld */; };
 		A526282B253D583D00247780 /* AppIdea_CRUDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526282A253D583D00247780 /* AppIdea_CRUDTests.swift */; };
 		A5262836253D583D00247780 /* AppIdea_CRUDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5262835253D583D00247780 /* AppIdea_CRUDUITests.swift */; };
+		A526284B253D596B00247780 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526284A253D596B00247780 /* HomeView.swift */; };
+		A5262853253D598500247780 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5262852253D598500247780 /* SearchView.swift */; };
+		A526285B253D599200247780 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526285A253D599200247780 /* AddView.swift */; };
+		A5262860253D59B600247780 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526285F253D59B600247780 /* NotificationView.swift */; };
+		A5262868253D59C500247780 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5262867253D59C500247780 /* AccountView.swift */; };
+		A5262875253D5A5C00247780 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5262874253D5A5C00247780 /* Header.swift */; };
+		A526287A253D61F900247780 /* SocialLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5262879253D61F900247780 /* SocialLinks.swift */; };
+		A557FC7B253E03FF00F512FF /* Profile_Links_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557FC7A253E03FF00F512FF /* Profile_Links_View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		A5262831253D583D00247780 /* AppIdea_CRUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppIdea_CRUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5262835253D583D00247780 /* AppIdea_CRUDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdea_CRUDUITests.swift; sourceTree = "<group>"; };
 		A5262837253D583D00247780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A526284A253D596B00247780 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A5262852253D598500247780 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A526285A253D599200247780 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		A526285F253D59B600247780 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A5262867253D59C500247780 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		A5262874253D5A5C00247780 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		A5262879253D61F900247780 /* SocialLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLinks.swift; sourceTree = "<group>"; };
+		A557FC7A253E03FF00F512FF /* Profile_Links_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile_Links_View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +115,10 @@
 		A5262812253D583B00247780 /* AppIdea_CRUD */ = {
 			isa = PBXGroup;
 			children = (
+				A526286F253D59F300247780 /* Layout */,
+				A5262849253D595000247780 /* Tabs */,
 				A5262813253D583B00247780 /* AppIdea_CRUDApp.swift */,
-				A5262815253D583B00247780 /* ContentView.swift */,
+				A5262846253D591A00247780 /* MainViews */,
 				A5262817253D583D00247780 /* Assets.xcassets */,
 				A526281C253D583D00247780 /* Persistence.swift */,
 				A5262821253D583D00247780 /* Info.plist */,
@@ -134,6 +152,44 @@
 				A5262837253D583D00247780 /* Info.plist */,
 			);
 			path = AppIdea_CRUDUITests;
+			sourceTree = "<group>";
+		};
+		A5262846253D591A00247780 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				A5262815253D583B00247780 /* ContentView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		A5262849253D595000247780 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				A526284A253D596B00247780 /* HomeView.swift */,
+				A5262852253D598500247780 /* SearchView.swift */,
+				A526285A253D599200247780 /* AddView.swift */,
+				A526285F253D59B600247780 /* NotificationView.swift */,
+				A5262867253D59C500247780 /* AccountView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		A526286F253D59F300247780 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A5262873253D5A3A00247780 /* Home */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		A5262873253D5A3A00247780 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A5262874253D5A5C00247780 /* Header.swift */,
+				A5262879253D61F900247780 /* SocialLinks.swift */,
+				A557FC7A253E03FF00F512FF /* Profile_Links_View.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +321,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5262875253D5A5C00247780 /* Header.swift in Sources */,
+				A526287A253D61F900247780 /* SocialLinks.swift in Sources */,
+				A526285B253D599200247780 /* AddView.swift in Sources */,
 				A526281D253D583D00247780 /* Persistence.swift in Sources */,
 				A5262816253D583B00247780 /* ContentView.swift in Sources */,
+				A5262860253D59B600247780 /* NotificationView.swift in Sources */,
+				A557FC7B253E03FF00F512FF /* Profile_Links_View.swift in Sources */,
 				A5262820253D583D00247780 /* AppIdea_CRUD.xcdatamodeld in Sources */,
+				A526284B253D596B00247780 /* HomeView.swift in Sources */,
+				A5262868253D59C500247780 /* AccountView.swift in Sources */,
+				A5262853253D598500247780 /* SearchView.swift in Sources */,
 				A5262814253D583B00247780 /* AppIdea_CRUDApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
