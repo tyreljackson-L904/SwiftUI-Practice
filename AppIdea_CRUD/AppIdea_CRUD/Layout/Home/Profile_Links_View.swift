@@ -15,7 +15,7 @@ struct Profile_Links_View: View {
                 .fontWeight(.bold)
                 .font(.title)
                 .edgesIgnoringSafeArea(.top)
-                .frame(width: .infinity, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: .infinity, height: 50)
             
                 
             Spacer()

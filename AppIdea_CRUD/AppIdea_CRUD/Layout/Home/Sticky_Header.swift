@@ -20,14 +20,14 @@ struct Sticky_Header: View {
                     Text("ProCode")
                         .fontWeight(.bold)
                         .font(.title)
-                        .padding()
                         .padding(.top)
-                        .padding(.top)
+                        
+                        
                     
                     Spacer(minLength: 0)
                     
                 }
-                .frame(width: .infinity, height: 100)
+                .frame(width: .infinity, height: 75)
                 .background(Color.white)
                 
                 HStack{

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SocialLinks: View {
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false){
             VStack {
                 ForEach(0..<10) { circle in
                     
@@ -24,7 +24,6 @@ struct SocialLinks: View {
                     }
                 }.padding(5)
             }
-            
         }
     }
 }
